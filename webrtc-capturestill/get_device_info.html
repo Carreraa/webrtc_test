@@ -14,7 +14,14 @@
         }else{
             document.addEventListener("plusready",plusReady,false);
         }
-        alert(navigator.userAgent);
+        //alert(navigator.userAgent);
+        var isInWeChat = /(micromessenger)/.test(navigator.userAgent.toLocaleLowerCase());
+        if(isInWeChat){
+            alert("WeChat");
+        }
+        else {
+            alert("Safari");
+        }
     </script>
 </head>
 <body>
