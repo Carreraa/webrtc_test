@@ -15,7 +15,7 @@
             document.addEventListener("plusready",plusReady,false);
         }
         //alert(navigator.userAgent);
-        var isInWeChat = /(os11_&micromessenger)/.test(navigator.userAgent.toLocaleLowerCase());
+        var isInWeChat = /(micromessenger)/.test(navigator.userAgent.toLocaleLowerCase());
         if(isInWeChat){
             alert("WeChat");
         }
